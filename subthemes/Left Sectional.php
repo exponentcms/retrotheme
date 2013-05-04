@@ -29,7 +29,7 @@
 		<div id="bd">
 			<div id="leftcol">
     			<?php //expTheme::module(array("module"=>"container","view"=>"Default","source"=>"@left","scope"=>"sectional")); ?>
-                <?php expTheme::module(array("controller"=>"container2","action"=>"showall","view"=>"showall","source"=>"@left","scope"=>"sectional")); ?>
+                <?php expTheme::module(array("controller"=>"container","action"=>"showall","view"=>"showall","source"=>"@left","scope"=>"sectional")); ?>
 			</div>
 			<div id="centercol">
 				<?php expTheme::main(); ?>
