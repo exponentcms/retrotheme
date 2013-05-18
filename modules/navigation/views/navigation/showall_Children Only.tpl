@@ -16,11 +16,9 @@
 <div class="module navigation children-only">
     <h2>{if $current->id==1}Menu{else}{$current->name}{/if}</h2>         
     <ul>
-        {*{assign var=islastdepth value="false"}*}
         {$islastdepth="false"}
         {foreach from=$sections item=section}
             {if $section->parent == $current->id}
-            {*{assign var=islastdepth value="true"}*}
             {$islastdepth="true"}
                  {if $section->public == 1}
                  	{if $current->id==1 && $section->id==1}

@@ -28,7 +28,6 @@
 		</div>
 		<div id="bd">
 			<div id="leftcol">
-    			<?php //expTheme::module(array("module"=>"container","view"=>"Default","source"=>"@left","scope"=>"top-sectional")); ?>
                 <?php expTheme::module(array("controller"=>"container","action"=>"showall","view"=>"showall","source"=>"@left","scope"=>"top-sectional")); ?>
 			</div>
 			<div id="centercol">
