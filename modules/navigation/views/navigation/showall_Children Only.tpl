@@ -1,11 +1,11 @@
 {*
- * Copyright (c) 2004-2016 OIC Group, Inc.
+ * Copyright (c) 2004-2018 OIC Group, Inc.
  *
  * This file is part of Exponent
  *
  * Exponent is free software; you can redistribute
  * it and/or modify it under the terms of the GNU
- * General Public License as published by the Free                  
+ * General Public License as published by the Free
  * Software Foundation; either version 2 of the
  * License, or (at your option) any later version.
  *
@@ -14,7 +14,7 @@
  *}
 
 <div class="module navigation children-only">
-    <h2>{if $current->id==1}Menu{else}{$current->name}{/if}</h2>         
+    <h2>{if $current->id==1}Menu{else}{$current->name}{/if}</h2>
     <ul>
         {$islastdepth="false"}
         {foreach from=$sections item=section}
@@ -34,7 +34,7 @@
                 {/if}
             {/if}
         {/foreach}
-        
+
         {if $islastdepth=="false"}
         {foreach from=$sections item=section}
             {if $section->parent == $current->parent}
@@ -47,7 +47,7 @@
                         {else}
                               <span class="navlink">{$section->name}</span>&#160;
                         {/if}
-                    </li>   
+                    </li>
              		{/if}
          		{/if}
          	{/if}
